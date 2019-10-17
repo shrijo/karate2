@@ -8,3 +8,9 @@ window.addEventListener('resize', () => {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
+
+function toggleMenu(clickedElement){
+  document.querySelector('.heroSlider').classList.toggle('menuOpened');
+  document.querySelector('.contentSection').classList.toggle('menuOpened');
+  document.querySelector('.applicationWrapper').classList.toggle('menuOpened');
+}
