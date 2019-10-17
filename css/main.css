@@ -33,6 +33,7 @@ nav{
   overflow-x: hidden;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
 }
 
 section{
@@ -53,6 +54,7 @@ section{
   align-items: stretch;
   scroll-snap-type: x mandatory;
   border-bottom: 1px solid #dedede;
+  -webkit-overflow-scrolling: touch;
 }
 
 .heroSlider::-webkit-scrollbar { width: 0 !important }
