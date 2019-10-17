@@ -13,7 +13,7 @@ nav{
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
-  height: 60px;
+  height: 40px;
   padding: 0;
   padding-left: calc( 5vw + 10px );
   padding-right: calc( 5vw + 10px );
@@ -22,8 +22,8 @@ nav{
 
 .karate{
   font-weight: normal;
-  line-height: 60px;
-  font-size: 18px;
+  line-height: 40px;
+  font-size: 16px;
   margin: 0;
 }
 
@@ -43,8 +43,8 @@ section{
 }
 
 .heroSlider{
-  height: calc( 100vh - 60px ); /* Use vh as a fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 100 - 60px);
+  height: calc( 100vh - 40px ); /* Use vh as a fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100 - 40px);
   width: 100vw;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -77,14 +77,14 @@ section{
 }
 
 .heroSliderItemTitle{
-  font-size: 14px;
+  font-size: 16px;
   position: sticky;
   margin: 0;
   padding: 0;
 }
 
 .heroSliderItemDescription{
-  font-size: 14px;
+  font-size: 1px;
   color: #888888;
   margin: 0;
   padding: 0;
