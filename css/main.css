@@ -25,19 +25,22 @@ nav{
 }
 
 .applicationWrapper{
-  height: 100vh;
+  height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
   overflow-x: hidden;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
 
 section{
-  min-height: 100vh;
+  height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
   scroll-snap-align: start;
 }
 
 .heroSlider{
-  min-height: calc( 100vh - 60px );
+  height: calc( 100vh - 60px ); /* Use vh as a fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100 - 60px);
   width: 100vw;
   overflow-x: scroll;
   overflow-y: hidden;
