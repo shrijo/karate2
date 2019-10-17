@@ -53,7 +53,6 @@ section{
 }
 
 .heroSlider{
-  scroll-snap-align: start;
   min-height: calc( 100vh - 50px ); /* Use vh as a fallback for browsers that do not support Custom Properties */
   min-height: calc(var(--vh, 1vh) * 100 - 50px);
   width: 100vw;
