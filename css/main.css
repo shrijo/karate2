@@ -17,6 +17,8 @@ nav{
   display: flex;
   justify-content: space-between;
   background-color: #ffffff;
+  scroll-snap-align: start;
+
 }
 
 .karate{
@@ -49,6 +51,7 @@ nav{
 section{
   height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * 100);
+  scroll-snap-align: start;
 }
 
 .heroSlider{
@@ -66,7 +69,6 @@ section{
   scroll-snap-type: x mandatory;
   border-bottom: 1px solid #dedede;
   -webkit-overflow-scrolling: touch;
-  scroll-snap-align: start;
 }
 
 .heroSlider::-webkit-scrollbar { width: 0 !important }
@@ -113,6 +115,7 @@ section{
 .contentSection{
   min-height: calc( 100vh - 50px ); /* Use vh as a fallback for browsers that do not support Custom Properties */
   min-height: calc(var(--vh, 1vh) * 100 - 50px);
-  padding: 60px calc( 5vw + 10px );
-  scroll-snap-align: start;
+  padding: 10px calc( 5vw + 10px );
+  scroll-snap-align: none;
+
 }
