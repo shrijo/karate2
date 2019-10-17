@@ -49,11 +49,12 @@ nav{
 }
 
 section{
-  height: calc( 100vh - 50px ); /* Use vh as a fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 100 - 50px);
+
 }
 
 .heroSlider{
+  height: calc( 100vh - 50px ); /* Use vh as a fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100 - 50px);
   scroll-snap-align: start;
   width: 100vw;
   box-sizing: border-box;
@@ -79,6 +80,8 @@ section{
 }
 
 .heroSliderItem{
+  height: calc( 100vh - 50px ); /* Use vh as a fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100 - 50px);
   scroll-snap-align: center;
   box-sizing: border-box;
   padding: 10px;
@@ -111,7 +114,10 @@ section{
 }
 
 .contentSection{
-  padding: 10px calc( 5vw + 10px );
+  margin-top: -50px;
+  height: calc( 100vh + 50px ); /* Use vh as a fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100 + 50px);
+  padding: 50px calc( 5vw + 10px );
   scroll-snap-align: none;
 
 }
