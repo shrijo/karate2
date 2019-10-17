@@ -77,12 +77,14 @@ section{
 }
 
 .heroSliderItemTitle{
+  font-size: 14px;
   position: sticky;
   margin: 0;
   padding: 0;
 }
 
 .heroSliderItemDescription{
+  font-size: 14px;
   color: #888888;
   margin: 0;
   padding: 0;
