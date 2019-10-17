@@ -17,6 +17,7 @@ nav{
   border-bottom: 1px solid #dedede;
   display: flex;
   justify-content: space-between;
+  background-color: #ffffff;
 }
 
 .karate{
@@ -34,6 +35,7 @@ nav{
   line-height: 50px;
   font-size: 16px;
   margin: 0;
+  outline: none;
 }
 
 .applicationWrapper{
@@ -43,17 +45,19 @@ nav{
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-direction: column;
 }
 
 section{
   height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * 100);
-  scroll-snap-align: start;
 }
 
 .heroSlider{
-  height: calc( 100vh - 50px ); /* Use vh as a fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 100 - 50px);
+  scroll-snap-align: start;
+  min-height: calc( 100vh - 50px ); /* Use vh as a fallback for browsers that do not support Custom Properties */
+  min-height: calc(var(--vh, 1vh) * 100 - 50px);
   width: 100vw;
   box-sizing: border-box;
   padding-top: 10px;
@@ -110,5 +114,8 @@ section{
 }
 
 .contentSection{
-  height: 200vh;
+  min-height: calc( 100vh - 50px ); /* Use vh as a fallback for browsers that do not support Custom Properties */
+  min-height: calc(var(--vh, 1vh) * 100 - 50px);
+  padding: 10px calc( 5vw + 10px );
+  scroll-snap-align: start;
 }
