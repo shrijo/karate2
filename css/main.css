@@ -1,8 +1,7 @@
 html, body{
   margin: 0;
   padding: 0;
-  font-family: 'futter_betamedium';
-  font-weight: 100;
+  font-family: 'futter_betaregular';
 }
 
 nav{
@@ -22,6 +21,7 @@ nav{
   line-height: 60px;
   font-size: 18px;
   margin: 0;
+  font-weight: normal;
 }
 
 .applicationWrapper{
@@ -72,12 +72,14 @@ section{
 }
 
 .heroSliderItemTitle{
+  font-weight: normal;
   position: sticky;
   margin: 0;
   padding: 0;
 }
 
 .heroSliderItemDescription{
+  font-weight: normal;
   color: #888888;
   margin: 0;
   padding: 0;
