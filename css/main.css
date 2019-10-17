@@ -117,5 +117,5 @@ section{
   min-height: calc( 100vh - 50px ); /* Use vh as a fallback for browsers that do not support Custom Properties */
   min-height: calc(var(--vh, 1vh) * 100 - 50px);
   padding: 10px calc( 5vw + 10px );
-  scroll-snap-align: start;
+  scroll-snap-align: none;
 }
