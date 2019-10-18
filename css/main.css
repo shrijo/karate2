@@ -6,6 +6,7 @@ html, body, button, h1, h2, h3, h4, h5, h6{
 }
 
 nav{
+  position: -webkit-sticky;
   position: sticky;
   height: 50px;
   padding: 0;
