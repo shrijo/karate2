@@ -10,7 +10,5 @@ window.addEventListener('resize', () => {
 });
 
 function toggleMenu(clickedElement){
-  document.querySelector('.heroSlider').classList.toggle('menuOpened');
-  document.querySelector('.contentSection').classList.toggle('menuOpened');
-  document.querySelector('.applicationWrapper').classList.toggle('menuOpened');
+
 }
