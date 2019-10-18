@@ -9,6 +9,7 @@ nav{
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  background-color: #FFFFFF;
   height: 50px;
   padding: 0;
   padding-left: calc( 5vw + 10px );
