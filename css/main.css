@@ -70,7 +70,7 @@ nav{
 .heroSlider{
   height: calc( 100vh - 50px ); /* Use vh as a fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * 100 - 50px);
-  scroll-snap-align: end;
+  scroll-snap-align: start;
   width: 100vw;
   box-sizing: border-box;
   overflow-x: scroll;
@@ -128,7 +128,7 @@ nav{
 }
 
 .contentSection{
-  scroll-snap-align: none;
+  scroll-snap-align: start;
   margin-top: -50px;
   box-sizing: border-box;
   min-height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
