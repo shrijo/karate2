@@ -128,7 +128,7 @@ nav{
 }
 
 .contentSection{
-  scroll-snap-align: start;
+  scroll-snap-align: start end;
   margin-top: -50px;
   box-sizing: border-box;
   min-height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
