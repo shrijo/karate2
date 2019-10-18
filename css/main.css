@@ -62,7 +62,7 @@ nav{
   height: calc(var(--vh, 1vh) * 100 );
   overflow-x: hidden;
   overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   -webkit-overflow-scrolling: touch;
   transition: all 500ms ease;
 }
