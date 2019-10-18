@@ -1,4 +1,4 @@
-html, body, button, h1, h2, h3, h4, h5, h6{
+html, body, button, h1, h2, h3, h4, h5, h6, p{
   margin: 0;
   padding: 0;
   font-family: 'futter_betamedium';
@@ -6,10 +6,7 @@ html, body, button, h1, h2, h3, h4, h5, h6{
 }
 
 nav{
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  flex-shrink:0;
   background-color: rgba( 255, 255, 255, 0.6);
   height: 50px;
   padding: 0;
@@ -31,16 +28,16 @@ nav{
 }
 
 .menuWrapper{
-  padding-top: -20px;
-  height: 20px;
-  margin: 15px 0;
+  display: block;
+  height: 30px;
+  margin: 10px 0;
   overflow: hidden;
 }
 
 .menuWrapper h2{
   margin: 0;
   padding: 0;
-  line-height: 20px;
+  line-height: 30px;
   font-size: 16px;
   transition: all 500ms ease;
   text-align: right;
@@ -61,16 +58,16 @@ nav{
   height: calc( 100vh ); /* Use vh as a fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * 100 );
   overflow-x: hidden;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+  overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   transition: all 500ms ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .heroSlider{
-  height: calc( 100vh - 50px ); /* Use vh as a fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 100 - 50px);
-  scroll-snap-align: start;
+  height: 0;
+  min-height: 0;
   width: 100vw;
   box-sizing: border-box;
   overflow-x: scroll;
@@ -84,6 +81,8 @@ nav{
   -webkit-overflow-scrolling: touch;
   transition: all 500ms ease;
 }
+
+
 
 .heroSlider::-webkit-scrollbar { width: 0 !important }
 .heroSlider { overflow: -moz-scrollbars-none; }
@@ -128,11 +127,15 @@ nav{
 }
 
 .contentSection{
-  scroll-snap-align: start;
-  margin-top: -50px;
   box-sizing: border-box;
-  min-height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
-  min-height: calc(var(--vh, 1vh) * 100);
-  padding: 50px calc( 5vw + 10px );
+  height: 0;
+  min-height: 0;
+  padding: 10px calc( 5vw + 10px );
+  overflow-y: scroll;
   transition: all 500ms ease;
+}
+
+.activeMenuPosition{
+  min-height: calc( 100vh - 50px ); /* Use vh as a fallback for browsers that do not support Custom Properties */
+  min-height: calc(var(--vh, 1vh) * 100 - 50px);
 }

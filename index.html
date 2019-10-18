@@ -19,7 +19,7 @@
   <body>
 
   <div class="applicationWrapper" onscroll="checkScroll(this)">
-      <section class="heroSlider">
+      <section class="heroSlider activeMenuPosition">
 
         <span class="heroSliderSpacer"></span>
         <div class="heroSliderItem">
@@ -52,10 +52,10 @@
 
       <nav>
         <h1 class="karate">Karate</h1>
-        <div class="menuWrapper">
-          <h2 class="menuItemProjects" style="transform: translateY(-20px)">Show Projects</h2>
-          <h2 class="menuItemStudio" style="transform: translateY(-20px)">Show Studio</h2>
-        </div>
+        <Button class="menuWrapper" onclick="toggleMenu(this)">
+          <h2 class="menuItemProjects">Show Projects</h2>
+          <h2 class="menuItemStudio">Show Studio</h2>
+        </Button>
       </nav>
 
       <section class="contentSection">
@@ -137,7 +137,7 @@
           Cloud bread tattooed forage, chambray yr roof party echo park man bun schlitz tumeric cred tousled mixtape. 3 wolf moon godard ramps lo-fi kinfolk hell of. XOXO fixie chambray hexagon echo park, roof party snackwave tousled kale chips mustache yr. Vice bitters readymade artisan.
           Oh. You need a little dummy text for your mockup? How quaint.
           I bet you’re still using Bootstrap too…
-          
+
         </p>
       </section>
   </div>
