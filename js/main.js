@@ -9,9 +9,15 @@ window.addEventListener('resize', () => {
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
 
+var menuPosition = "About";
+
 function checkScroll(wrapper){
   console.log();
   if(wrapper.scrollTop >= document.querySelector('.contentSection').offsetTop){
-    alert("yo");
+    document.querySelector('.menuItemProjects').style.transform = 'translateY(0px)';
+    document.querySelector('.menuItemStudio').style.transform = 'translateY(0px)';
+  } else if(wrapper.scrollTop == 0){
+    document.querySelector('.menuItemProjects').style.transform = 'translateY(-20px)';
+    document.querySelector('.menuItemStudio').style.transform = 'translateY(-20px)';
   }
 }
