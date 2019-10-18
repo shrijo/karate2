@@ -40,7 +40,13 @@ nav{
   line-height: 30px;
   font-size: 16px;
   transition: all 500ms ease;
+  transition-delay: 500ms;
   text-align: right;
+  transform: translateY(-30px);
+}
+
+.second h2{
+  transform: translateY(0px);
 }
 
 .changeToggle{

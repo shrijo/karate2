@@ -14,12 +14,5 @@ function toggleMenu(wrapper){
   document.querySelector('.heroSlider').classList.toggle("activeMenuPosition");
   document.querySelector('.contentSection').classList.toggle("activeMenuPosition");
 
-  wrapper.classList.add("second");
-
-//    document.querySelector('.menuItemProjects').style.transform = 'translateY(0px)';
-//    document.querySelector('.menuItemStudio').style.transform = 'translateY(0px)';
-
-//    document.querySelector('.menuItemProjects').style.transform = 'translateY(-20px)';
-//    document.querySelector('.menuItemStudio').style.transform = 'translateY(-20px)';
-
+  wrapper.classList.toggle("second");
 }
