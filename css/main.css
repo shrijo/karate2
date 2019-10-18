@@ -62,7 +62,7 @@ nav{
   height: calc(var(--vh, 1vh) * 100 );
   overflow-x: hidden;
   overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory LTR;
   -webkit-overflow-scrolling: touch;
   transition: all 500ms ease;
 }
@@ -128,7 +128,7 @@ nav{
 }
 
 .contentSection{
-  scroll-snap-align: none !important;
+  scroll-snap-align: start;
   margin-top: -50px;
   box-sizing: border-box;
   min-height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
