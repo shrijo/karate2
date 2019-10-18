@@ -107,21 +107,12 @@ nav{
 }
 
 .contentSection{
+  scroll-snap-align: start;
+  margin-top: -50px;
   box-sizing: border-box;
-  height: calc( 100vh - 50px ); /* Use vh as a fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 100 - 50px);
-  padding: 0px calc( 5vw + 10px );
+  min-height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+  min-height: calc(var(--vh, 1vh) * 100);
+  padding: 50px calc( 5vw + 10px );
   transition: all 500ms ease;
   overflow: scroll;
-}
-
-.heroSlider.menuOpened{
-  height: calc( 50vh - 25px ); /* Use vh as a fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 50 - 25px);
-}
-
-.contentSection.menuOpened{
-  height: calc( 50vh - 25px ); /* Use vh as a fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 50 - 25px);
-  padding: 0px calc( 5vw + 10px );
 }

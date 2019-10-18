@@ -9,6 +9,9 @@ window.addEventListener('resize', () => {
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
 
-function toggleMenu(clickedElement){
-
+function checkScroll(wrapper){
+  console.log();
+  if(wrapper.scrollTop >= document.querySelector('.contentSection').offsetTop){
+    alert("yo");
+  }
 }
